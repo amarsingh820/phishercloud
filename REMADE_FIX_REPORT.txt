@@ -1,0 +1,19 @@
+PopcornPlay Extension Repo Remade Fix Report v3
+================================================
+
+Issue: app showed plugin list but download button returned Error.
+Root causes fixed:
+1) plugins.json still had old fileSize/fileHash for rebuilt .cs3 files.
+2) bundled .jar files still referenced com.lagradost.cloudstream3 while PopcornPlay v38 uses com.popcornplay.app.
+
+Plugins in plugins.json: 78
+JAR files processed: 43
+JAR files with package refs patched: 43
+
+Package rewrite applied:
+com.lagradost.cloudstream3  ->  com.popcornplay.app
+com/lagradost/cloudstream3  ->  com/popcornplay/app
+
+All plugin size/hash fields were regenerated after patching.
+
+Upload ALL extracted files to the GitHub repo root before testing in the app.

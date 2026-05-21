@@ -1,0 +1,9 @@
+{
+  "name": "Phisher Cloud Repo",
+  "iconUrl": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/RepoIcon.png",
+  "description": "CloudStream / PopcornPlay Extensions (Phisher mirror)",
+  "manifestVersion": 1,
+  "pluginLists": [
+    "https://raw.githubusercontent.com/amarsingh820/phishercloud/main/plugins.json"
+  ]
+}
